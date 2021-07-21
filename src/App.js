@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/about-us" component={AboutUs} />
+        <Route path="*" component={NotFound} />
       </Switch>
     </div>
   );
